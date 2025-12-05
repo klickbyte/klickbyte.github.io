@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fuel Your Future: Business Funding & Idea Generation | KlickByte</title>
+    <title>Fuel Your Future: Business Funding & Idea Generation | KLICKBAY</title>
     <meta name="description" content="Access fast, flexible business funding through Lulalend and discover your ideal business concept with our personality quiz. Unlock massive growth for South African SMEs.">
-    <meta name="keywords" content="Lulalend, business funding, small business loan, startup ideas, cash flow projection, finance, South Africa, POPI Act, KlickByte, business quiz, SME funding">
-    <meta name="author" content="KlickByte">
+    <meta name="keywords" content="Lulalend, business funding, small business loan, startup ideas, cash flow projection, finance, South Africa, POPI Act, KLICKBAY, business quiz, SME funding">
+    <meta name="author" content="KLICKBAY">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -48,15 +47,37 @@
             border-color: #059669;
             box-shadow: 0 0 0 4px #a7f3d0;
         }
+
+        /* NEW CSS for Animated Logo (simulating orange to red color change on the K logo mark) */
+        @keyframes color-shift {
+            0% { filter: hue-rotate(0deg); } /* Original orange-red hue */
+            50% { filter: hue-rotate(30deg) saturate(1.5); } /* Shift hue towards a deeper red and saturate */
+            100% { filter: hue-rotate(0deg); }
+        }
+        .animated-logo {
+            /* The image is a composite screenshot, so we size it to conceptually represent the logo mark */
+            width: 40px; /* Adjust size for the K-mark */
+            height: 40px;
+            object-fit: cover;
+            /* Applying animation */
+            animation: color-shift 3s infinite alternate;
+        }
+        /* Due to the image being a screenshot, we will use an outer wrapper and a slightly different method to display the K-logo mark without the extra text, while keeping the image as the source */
+        .logo-wrapper {
+            /* This is a compromise: we use the text for h1 and use a small image for the K logo mark */
+        }
     </style>
 </head>
 <body class="min-h-screen antialiased">
 
     <header class="bg-white shadow-lg sticky top-0 z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
-                KlickByte <span class="text-emerald-500">Growth</span>
-            </h1>
+            <div class="flex items-center space-x-2">
+                <img src="http://googleusercontent.com/image_generation_content/0" alt="KLICKBAY K Logo" class="animated-logo">
+                <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
+                    KLICKBAY <span class="text-emerald-500">Growth</span>
+                </h1>
+            </div>
             <nav class="hidden md:block">
                 <a href="#lulalend-benefits" class="text-gray-600 hover:text-emerald-500 mx-3 transition duration-150 font-medium">Why Fund?</a>
                 <a href="#business-quiz" class="text-gray-600 hover:text-emerald-500 mx-3 transition duration-150 font-medium">Idea Quiz</a>
@@ -247,7 +268,7 @@
 
     <footer class="bg-gray-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
-            <p class="mb-4 md:mb-0">&copy; 2025 KlickByte Growth. All rights reserved. Partnered with Lulalend.</p>
+            <p class="mb-4 md:mb-0">&copy; 2025 KLICKBAY Growth. All rights reserved. Partnered with Lulalend.</p>
             <div class="space-x-4">
                 <a href="#" class="text-gray-400 hover:text-white transition duration-150">Terms of Service</a>
                 <a href="#privacy" id="privacy-link" class="text-gray-400 hover:text-white transition duration-150">Privacy & POPI Act</a>
@@ -255,7 +276,7 @@
         </div>
         <div id="privacy" class="max-w-4xl mx-auto px-4 mt-8 text-sm text-gray-400 hidden bg-gray-700 p-6 rounded-lg">
             <h4 class="text-lg font-semibold text-white mb-2">POPI Act Compliance & Privacy Statement</h4>
-            <p>We are committed to the protection of your personal information in compliance with the Protection of Personal Information Act (POPI Act) of South Africa. <b>This website does not store any personal information</b> you enter into the business idea quiz. All interactions are used solely to provide the on-screen result and are not retained by KlickByte.</p>
+            <p>We are committed to the protection of your personal information in compliance with the Protection of Personal Information Act (POPI Act) of South Africa. <b>This website does not store any personal information</b> you enter into the business idea quiz. All interactions are used solely to provide the on-screen result and are not retained by KLICKBAY.</p>
             <p class="mt-2">The Lulalend application links are affiliate links and clicking them will direct you to Lulalend's secure website, which operates under its own privacy policy. By using this site, you acknowledge and accept this privacy statement.</p>
             <button onclick="document.getElementById('privacy').classList.add('hidden')" class="mt-3 px-3 py-1 text-sm bg-emerald-600 text-white rounded hover:bg-emerald-700">Acknowledge & Close</button>
         </div>
